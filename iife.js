@@ -3,7 +3,7 @@
     console.log(superHero);
 })();
 
-(function () {
+(function (message) {
     const superHero = "Superman";
-    console.log(superHero);
-})();
+    console.log(message, superHero);
+})("Hello");
