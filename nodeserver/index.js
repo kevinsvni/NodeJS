@@ -2,7 +2,11 @@ const http = require("node:http");
 
 const server = http.createServer((req, res) => {
     res.writeHead(200, {"Contect-Type": "text/plain"});
-    res.end("Hello Kevin!");
+    const superHero = {
+        fname: "Kevin",
+        lname: "Savani"
+    }
+    res.end(JSON.stringify(superHero));
     console.log(req)
 });
 
